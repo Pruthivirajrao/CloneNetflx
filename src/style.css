@@ -1,0 +1,199 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  /* text-decoration: none; */
+  margin-top: 10px;
+  color:white;
+  
+}
+
+  body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-image: url("/public/assets/images/Netflix-background.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width: 100%;
+    overflow: none;
+    
+  }
+  div.background-shade{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.576);
+  }
+  header{
+    padding: 3%;
+    padding-left:5%;
+    padding-right:10%;
+  }
+  header img{
+    height: 60px;
+  }
+
+  /* main starts */
+  main{
+    margin:4% 2% 4% 2%;
+  }
+  .main-section{
+    padding:0 6% 0 6%
+  }
+  p.main-heading{
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-size: 330%;
+    font-weight: 600;
+  }
+  main .email::placeholder{
+    color:rgba(255, 255, 255, 0.693)
+  }
+  main .email{
+    width: 22rem;
+  }
+  /* End of main section */
+
+  /* Separator starts*/
+  div.separate{
+    height: 10px;
+    width: 100%;
+    background-color: rgb(88, 87, 87);
+  }
+
+  /* Separator End*/
+
+  /* Features Section starts  */
+   section.features{
+    background-color: black;
+    color:white;
+    width: 100%;
+    flex-wrap:wrap;
+    min-height: auto;
+    padding:4.5rem 0; 
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+   }
+   .features .tvContainer{
+    position:relative;
+    background-color: black;
+  } 
+  .features img{
+    position: relative;
+    z-index: 10;
+  }
+ .features .tvVdo{
+      position: absolute;
+      right: 86px;
+      top: 98px;
+  } 
+  /* Features Section Ends */
+  .tvContainer .movieVdo{
+    position: absolute;
+    right: 120px;
+    top: 18px;
+    width: 414px;
+    height: 276px;
+  }
+
+button.accordion-button:hover{
+ background-color: rgba(128, 128, 128, 0.555) !important;
+ transition: 1s;
+}
+
+  /* footer start */
+  footer{
+    background-color: black;
+    padding-top: 70px;
+  }
+  .accordion-header{
+    padding: 9px !important;
+    background-color: black;
+  }
+  #AllQueries{
+    margin-top: 100px !important;
+  }
+
+
+  /* Responsive */
+  @media screen and (max-width:909px) and (min-width:653px) {
+
+    .brand{
+      height: 2rem;
+    }
+    p.main-heading{
+      font-size: 200%;
+      font-weight: 400;
+    }
+    div.separate{
+      height: 5px;
+    }
+    .FAQ-btns{
+      padding: 0 100px 0 60px !important; 
+    }
+    .inpBox input{
+      width: 50% !important;
+    }
+    .inpBox button{
+      width: 120px !important;
+    }
+  }
+
+  /* maxwidth 653 means 653 purbare sabu a effect rahiba */
+  @media screen and (max-width:653px){
+    .brand{
+      height: 2rem;
+    }
+    
+    p.main-heading{
+      font-size: 170%;
+      font-weight: 200;
+    }
+    div.separate{
+      height: 3px;
+    }
+    .FAQ-btns{
+      padding: 0 100px 0 60px !important; 
+    }
+    .inpBox input{
+      width: 50% !important;
+    }
+    .inpBox button{
+      width: 120px !important;
+    }
+    img{
+      width: 100%;
+    }
+    .tvContainer .movieVdo {
+      position: absolute;
+      right: 108px;
+      top: 3px;
+      width: 422px;
+    }
+    .features .tvVdo {
+      position: absolute;
+      right: 65px;
+      top: 87px;
+      /* width: 355px; */
+      width: 490px;
+  }
+  header select{
+    height: 43px;
+    width: 119px;
+  }
+  header .btn-danger{
+    width: 100px;
+  }
+  .FAQ-btns{
+    width: 100%;
+    padding: 0;
+    /* padding: 0 100px 0 60px !important;  */
+  }
+
+
+}
+
