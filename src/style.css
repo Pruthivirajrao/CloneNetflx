@@ -15,7 +15,7 @@ a{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-image: url("/public/assets/images/Netflix-background.jpg") ;
+    background-image: url("../assets/images/Netflix-background.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
     height:100vh;
